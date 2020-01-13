@@ -5,3 +5,12 @@ body{
 h1{
     color: aqua;
 }
+
+.form,
+.greeting{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
