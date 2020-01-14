@@ -1,5 +1,5 @@
 const greetContainer = document.querySelector('.js-greeting-form');
-const inputBox = greetContainer.querySelector('input');
+const inputGreetBox = greetContainer.querySelector('input');
 const greeting = document.querySelector('.js-greeting');
 
 const USER_NAME = 'currentName';
@@ -19,7 +19,7 @@ function askName() {
     greetContainer.classList.add(SHOWING);
     greetContainer.addEventListener('submit', function(event){
         event.preventDefault();
-        const currentValue = inputBox.value;
+        const currentValue = inputGreetBox.value;
         paintGreeting(currentValue);
         saveName(currentValue);
     })
